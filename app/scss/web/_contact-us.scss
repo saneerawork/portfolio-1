@@ -1,0 +1,291 @@
+.main-wrapper.contact-us-wrapper {
+  .main-content-wrapper {
+    padding: 50px 0;
+    .contact-wrapper {
+      margin: 0;
+      > div {
+        padding: 0;
+      }
+    }
+    .form-wrapper {
+      padding: 40px;
+      margin-right: 20px;
+      background-color: $brown-3;
+      h3 {
+        margin-bottom: 15px;
+        font-family: $secondary-font;
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+      }
+      p {
+        padding: 0 40px 30px;
+        text-align: center;
+        font-family: $secondary-font;
+        color: $gray-2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      form {
+        input,
+        select,
+        textarea {
+          width: 100%;
+          margin-bottom: 18px;
+          height: 40px;
+          border: 1px solid $gray-5;
+          background-color: $white;
+          font-family: $secondary-font;
+          color: $gray-1;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 21px;
+          border-radius: 0;
+          box-shadow: none;
+          &:focus {
+            box-shadow: none;
+          }
+          &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: $gray-1;
+          }
+          &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: $gray-1;
+          }
+          &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: $gray-1;
+          }
+          &:-moz-placeholder {
+            /* Firefox 18- */
+            color: $gray-1;
+          }
+        }
+
+        .form-group.select {
+          position: relative;
+          &:after {
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 7px solid $brown-4;
+            position: absolute;
+            top: 40%;
+            right: 15px;
+            content: "";
+            z-index: 2;
+          }
+          &:before {
+            content: "";
+            width: 7px;
+            height: 38px;
+            position: absolute;
+            top: 1px;
+            right: 6px;
+            background: $white;
+            z-index: 1;
+          }
+        }
+
+        textarea {
+          max-width: 100%;
+          min-height: 150px;
+        }
+        button {
+          @include main-btn(12px);
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+    }
+    .contact-item-wrapper {
+      height: 244px;
+      background-color: $gray-2;
+      margin-left: 20px;
+      padding: 50px 40px 20px;
+      h4{
+        margin-bottom:10px;
+        font-family: $main-font;
+        color: $brown-1;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 21px;
+
+      }
+      p{
+        font-family: $secondary-font;
+        color: $brown-3;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        strong{
+          margin-right: 5px;
+          font-weight: 700;
+        }
+        a{
+          color: $brown-3;
+          &:hover,
+          &:focus{
+            color: $blue-1;
+          }
+        }
+      }
+      &.main-item{
+        padding: 45px;
+        background: $white;
+        text-align: center;
+        h3{
+          font-family: $main-font;
+          color: $brown-1;
+          font-size: 48px;
+          font-weight: 700;
+        }
+
+        .social-media-wrapper {
+          @include clearfix;
+          width: 100%;
+          ul {
+            display: inline-block;
+            margin: 20px 0 0;
+            padding: 0;
+            li {
+              display: inline-block;
+              float: left;
+              &:not(:last-of-type){
+                margin-right: 15px;
+              }
+              a {
+                color: $gray-1;
+                font-size: 18px;
+                &:hover{
+                  color: $brown-4;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.middle{
+        margin: 0 10px;
+      }
+      &:first-of-type{
+        margin-bottom: 30px;
+      }
+    }
+
+    .map-wrapper{
+      margin: 60px 0 50px;
+      h3{
+        margin-bottom: 40px;
+        font-family: $main-font;
+        color: $brown-1;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+
+    .directions-wrapper{
+      h3{
+        margin-bottom: 20px;
+        font-family: $secondary-font;
+        color: $brown-3;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+      }
+      .details-wrapper{
+        padding: 40px;
+        border: 1px solid $gray-5;
+        h4{
+          margin-bottom: 10px;
+          font-family: $secondary-font;
+          color: $brown-6;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        ul{
+          margin: 0;
+          padding-left: 20px;
+          li{
+            font-family: $secondary-font;
+            color: $gray-1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .parking-wrapper{
+      margin-top: 50px;
+      h3{
+        margin-bottom: 20px;
+        font-family: $secondary-font;
+        color: $brown-3;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+      }
+      .parking-details-wrapper{
+        padding: 40px;
+        &.content{
+          @include clearfix;
+          border: 1px solid $gray-5;
+          h4{
+            margin-bottom: 10px;
+            font-family: $secondary-font;
+            color: $brown-6;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+          }
+          p{
+            @include clearfix;
+            display: block;
+            margin-bottom: 26px;
+            font-family: $secondary-font;
+            color: $gray-1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            strong{
+              font-weight: 700;
+            }
+            a{
+              color: $gray-1;
+              &:focus,
+              &:hover{
+                color: $blue-1;
+              }
+            }
+          }
+          ul{
+            float: left;
+            width: 50%;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            li{
+              font-family: $secondary-font;
+              color: $gray-1;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+            }
+          }
+          > a{
+            @include main-btn(12px 38px);
+          }
+        }
+      }
+    }
+
+  }
+}

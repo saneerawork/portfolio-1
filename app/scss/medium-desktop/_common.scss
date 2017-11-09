@@ -1,0 +1,21 @@
+.main-wrapper {
+//  margin-top: 50px;
+  padding: 0;
+
+  .common-slider-section{
+    .container{
+      padding: 0 15px;
+    }
+    .common-img-slider{
+      .common-slide-item{
+        a{
+          margin: 0 10px;
+          .img-wrapper{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}

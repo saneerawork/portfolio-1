@@ -1,0 +1,184 @@
+/**
+ * Allows you to use retina images at various pixel densities.
+ * Examples:
+ *
+ *   @include retina(/images/mypic.jpg, 2);
+ *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent);
+ *
+ * @param  {Value}  $path               The path to the file name minus extension.
+ * @param  {Number} $cap:    2          The highest pixel density level images exist for.
+ * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
+ * @param  {Value}  $extras: null       Any other `background` values to be added.
+ */
+.main-wrapper.event-detail-wrapper .content-section {
+  padding: 50px 0; }
+  .main-wrapper.event-detail-wrapper .content-section > .container {
+    background-color: #f8f8f8; }
+    .main-wrapper.event-detail-wrapper .content-section > .container h3 {
+      margin-bottom: 20px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #2c2625;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 21px; }
+    .main-wrapper.event-detail-wrapper .content-section > .container p {
+      margin-bottom: 25px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #2c2625;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px; }
+  .main-wrapper.event-detail-wrapper .content-section .left {
+    padding: 40px;
+    background: #fff; }
+    .main-wrapper.event-detail-wrapper .content-section .left .share {
+      display: inline-block; }
+      .main-wrapper.event-detail-wrapper .content-section .left .share:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0; }
+      .main-wrapper.event-detail-wrapper .content-section .left .share span {
+        float: left;
+        list-style: none;
+        font-family: "Nunito Sans", sans-serif;
+        color: #2c2625;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px; }
+      .main-wrapper.event-detail-wrapper .content-section .left .share ul {
+        padding: 0;
+        margin: 0;
+        display: inline-block; }
+        .main-wrapper.event-detail-wrapper .content-section .left .share ul:after {
+          visibility: hidden;
+          display: block;
+          font-size: 0;
+          content: " ";
+          clear: both;
+          height: 0; }
+        .main-wrapper.event-detail-wrapper .content-section .left .share ul li {
+          float: left;
+          list-style: none; }
+          .main-wrapper.event-detail-wrapper .content-section .left .share ul li a {
+            display: inline-block;
+            margin-left: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            border: 1px solid transparent;
+            text-align: center; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a i {
+              display: inline-block;
+              color: #fff;
+              font-size: 16px;
+              line-height: 28px; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a:hover.fb {
+              background-color: #fff; }
+              .main-wrapper.event-detail-wrapper .content-section .left .share ul li a:hover.fb i {
+                color: #395185; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a:hover.gplus {
+              background-color: #fff; }
+              .main-wrapper.event-detail-wrapper .content-section .left .share ul li a:hover.gplus i {
+                color: #dc4a3d; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a:hover.twitter {
+              background-color: #fff; }
+              .main-wrapper.event-detail-wrapper .content-section .left .share ul li a:hover.twitter i {
+                color: #1da1f3; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a.fb {
+              background-color: #395185;
+              border-color: #395185; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a.gplus {
+              background-color: #dc4a3d;
+              border-color: #dc4a3d; }
+            .main-wrapper.event-detail-wrapper .content-section .left .share ul li a.twitter {
+              background-color: #1da1f3;
+              border-color: #1da1f3; }
+  .main-wrapper.event-detail-wrapper .content-section .right {
+    padding: 20px 40px 40px; }
+    .main-wrapper.event-detail-wrapper .content-section .right p {
+      margin-bottom: 0; }
+    .main-wrapper.event-detail-wrapper .content-section .right h3 {
+      margin: 20px 0; }
+    .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper {
+      display: inline-block;
+      width: 100%;
+      margin: 20px 0 40px; }
+      .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0; }
+      .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper .price {
+        width: 45%;
+        float: left;
+        font-family: "Nunito Sans", sans-serif;
+        color: #2c2625;
+        font-weight: 400; }
+        .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper .price p {
+          margin: 0;
+          font-size: 24px;
+          line-height: 46px; }
+          .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper .price p span {
+            font-size: 14px; }
+      .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper .link {
+        width: 45%;
+        float: right; }
+        .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper .link a {
+          display: inline-block;
+          padding: 12px;
+          background-color: #dcc39a;
+          font-family: "Cormorant Garamond", serif;
+          color: #2c2625;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          border: 1px solid #dcc39a;
+          text-align: center;
+          transition: all ease 0.4s;
+          width: 100%; }
+          .main-wrapper.event-detail-wrapper .content-section .right .price-wrapper .link a:hover {
+            color: #fff;
+            background-color: #004684;
+            border: 1px solid #004684; }
+    .main-wrapper.event-detail-wrapper .content-section .right .photo-wrapper > img {
+      width: 100%; }
+    .main-wrapper.event-detail-wrapper .content-section .right .photo-wrapper .name {
+      margin-top: 15px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #a6825e;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      text-transform: uppercase; }
+    .main-wrapper.event-detail-wrapper .content-section .right .photo-wrapper .designation {
+      margin-top: 6px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #2c2625;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 21px; }
+    .main-wrapper.event-detail-wrapper .content-section .right .photo-wrapper .workplace {
+      margin-top: 4px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #2c2625;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px; }
+
+/*Media queries*/
+/*Mac*/
+/* Retina */
+/*Tab devices*/
+/*Mobile phones*/
+@media (max-width: 767px) {
+  .main-wrapper.event-detail-wrapper .content-section {
+    padding: 30px 0 0; }
+    .main-wrapper.event-detail-wrapper .content-section .left {
+      padding: 15px 30px; }
+    .main-wrapper.event-detail-wrapper .content-section .right {
+      padding: 15px 30px 30px; } }

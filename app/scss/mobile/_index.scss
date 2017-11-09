@@ -1,0 +1,301 @@
+.main-wrapper.home-wrapper {
+
+  .main-banner-slider-wrapper {
+    height: auto;
+    overflow: visible;
+    .banner-slider {
+      .slide-item {
+        .content-wrapper {
+          position: static;
+          height: auto;
+          background: $brown-3;
+        }
+        .content {
+          display: block;
+          text-align: center;
+          padding: 30px 0;
+          h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+      .slick-dots {
+        position: static;
+        width: 100%;
+        padding-bottom: 15px;
+        background: $brown-3;
+      }
+    }
+  }
+  .below-banner-section {
+    padding-top: 30px;
+    background-color: $gray-2;
+    .links-wrapper-slider {
+      margin-top: 0;
+      .link-item {
+        height: auto;
+        a {
+          width: 100%;
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+
+    }
+    .content-wrapper {
+      padding-top: 30px;
+      h3 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      > div {
+        &:last-of-type {
+          padding-left: 0;
+        }
+      }
+      .why-us-wrapper {
+        padding: 25px 15px;
+      }
+    }
+  }
+
+  .vids-photo-section {
+    padding: 30px 0;
+    .container {
+      padding: 0;
+    }
+    h2 {
+      @include main-title;
+      margin-bottom: 25px;
+    }
+    .nav-tabs {
+      > li {
+        width: 50%;
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+        float: left;
+        &:hover {
+          &:before {
+            display: none;
+          }
+        }
+        &.active {
+          &:before {
+            display: none;
+          }
+        }
+        a{
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+      }
+    }
+    .tab-content {
+      padding: 0;
+      .video-img-mobile-slider {
+        .slider-item {
+          img {
+            width: 100%;
+          }
+          a[data-fancybox] {
+            display: inline-block;
+            position: relative;
+            img {
+              width: 100%;
+            }
+            &:before {
+              content: '';
+              display: inline-block;
+              width: 100px;
+              height: 100px;
+              position: absolute;
+              top: calc(50% - 50px);
+              left: calc(50% - 50px);
+              @include border-radius(100px);
+              background: rgba(0, 0, 0, .5);
+              @include transition(all ease, .3s);
+            }
+            &:after {
+              content: '';
+              display: inline-block;
+              width: 0;
+              height: 0;
+              position: absolute;
+              top: calc(50% - 20px);
+              left: calc(50% - 10px);
+              border-left: 30px solid rgba(255, 255, 255, .7);
+              border-top: 20px solid transparent;
+              border-bottom: 20px solid transparent;
+              @include transition(all ease, .3s);
+            }
+            &:hover {
+              &:before {
+                background: rgba(0, 0, 0, .9);
+              }
+              &:after {
+                border-left-color: rgba(255, 255, 255, .7);
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .support-mission-section {
+    padding: 30px 15px;
+    h2 {
+      margin-bottom: 25px;
+    }
+    .content-wrapper {
+      margin-bottom: 35px;
+      &:first-of-type {
+        padding: 0 15px;
+        border-right: none;
+      }
+      &:nth-of-type(2) {
+        padding: 0 15px;
+        margin-left: 0;
+        border-left: none;
+      }
+      h4 {
+        text-align: center;
+      }
+      p {
+        padding: 0;
+        text-align: center;
+      }
+      a{
+        width: 100%;
+      }
+    }
+  }
+
+  .best-hotel-section {
+    padding: 30px 0 0;
+    background: transparent !important;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .container {
+      padding: 0;
+    }
+    .top-row {
+      display: block;
+      margin: 0;
+      .top-row-item {
+        width: 100%;
+        padding:  0 15px;
+        text-align: center;
+        &:not(:last-of-type) {
+          border-right: none;
+        }
+        img{
+          display: inline-block;
+        }
+        > p {
+          text-align: center;
+        }
+      }
+    }
+    .best-hotel-slider {
+      .bottom-row {
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+        .image-wrapper{
+          float: none;
+          margin-bottom: 25px;
+        }
+        .content-wrapper{
+          width: 100%;
+          float: none;
+        }
+      }
+    }
+  }
+
+  .plan-event-section{
+    padding: 30px 0;
+    .container{
+      padding: 0 15px;
+    }
+    h2{
+      margin-bottom: 25px;
+    }
+    .button-wrapper{
+      a{
+        width: calc(100%);
+        &:first-of-type{
+          margin: 15px 0;
+        }
+        &:last-of-type{
+          margin: 0;
+        }
+      }
+    }
+    .image-wrapper{
+      position: relative;
+      min-height: 0;
+      img{
+        border: 8px solid $white;
+        position: static;
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .club-news-section{
+    padding: 30px 0;
+    h2{
+      margin-bottom: 25px;
+    }
+    .content-wrapper{
+      position: relative;
+      .image-wrapper{
+        margin-left: 0;
+      }
+      .text-wrapper{
+        position: static;
+        width: 100%;
+        padding: 25px 15px;
+      }
+    }
+    .left{
+      padding: 0;
+      .content-wrapper{
+        height: auto;
+        .image-wrapper{
+          width: 100%;
+        }
+      }
+    }
+    .right{
+      padding: 0;
+      .content-wrapper{
+        height: auto;
+        &.top{
+          margin-bottom: 0;
+        }
+        .image-wrapper{
+          width: 100%;
+          height: 299px;
+        }
+      }
+    }
+    .all-news-link{
+      width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+.main-wrapper {
+  margin-top: 50px;
+  padding: 0;
+
+  .banner-section {
+    height: 200px;
+    .content-wrapper {
+      padding: 0 15px;
+      h2{
+        font-size: 46px;
+      }
+      h3{
+        font-size: 28px;
+      }
+      h4{
+        font-size: 18px;
+      }
+      a{
+        font-size: 14px;
+        padding: 12px;
+        width: 100%;
+      }
+    }
+  }
+
+  .common-slider-section{
+    padding: 30px 0;
+    h2{
+      margin-bottom: 25px;
+    }
+    .container{
+      padding: 0 15px;
+    }
+    .common-img-slider{
+      .common-slide-item{
+        a{
+          margin: 0;
+          .img-wrapper{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}

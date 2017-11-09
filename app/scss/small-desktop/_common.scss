@@ -1,0 +1,25 @@
+.main-wrapper {
+  margin-top: 50px;
+  padding: 0;
+
+  .common-slider-section{
+    padding: 30px 0;
+    h2{
+      margin-bottom: 25px;
+    }
+    .container{
+      padding: 0 15px;
+    }
+    .common-img-slider{
+      .common-slide-item{
+        a{
+          margin: 0 10px;
+          .img-wrapper{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}

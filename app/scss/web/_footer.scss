@@ -1,0 +1,133 @@
+footer {
+  padding: 50px 0;
+  background-color: $blue-1;
+  .container{
+    padding: 0;
+    .row{
+    margin: 0;
+      > div{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .top {
+    padding-bottom: 18px;
+    border-bottom: 1px solid $white-01;
+    .left {
+      h3 {
+        padding-left: 10px;
+        margin-bottom: 13px;
+        font-family: $main-font;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 21px;
+        text-transform: uppercase;
+      }
+      ul {
+        margin: 0 0 7px;
+        padding: 0 0 0 10px;
+        @include clearfix;
+        li {
+          list-style: none;
+          float: left;
+          padding-right: 21px;
+          a {
+            font-family: $main-font;
+            color: $white;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:hover {
+              color: $brown-2;
+            }
+          }
+        }
+      }
+      p {
+        padding-left: 10px;
+        font-family: $secondary-font;
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+      }
+    }
+    .right {
+      padding: 0;
+      .marine-logo-wrapper {
+        @include clearfix;
+        width: 100%;
+        ul {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          float: right;
+          li {
+            display: inline-block;
+            float: left;
+            &:not(:last-of-type){
+              margin-right: 16px;
+            }
+            a {
+              &:hover{
+                opacity: .5;
+              }
+            }
+          }
+        }
+      }
+      .social-media-wrapper {
+        @include clearfix;
+        width: 100%;
+        ul {
+          display: inline-block;
+          margin: 9px 0 0;
+          padding: 0;
+          float: right;
+          li {
+            display: inline-block;
+            float: left;
+            &:not(:last-of-type){
+              margin-right: 17px;
+            }
+            a {
+              color: $white;
+              font-size: 20px;
+              &:hover{
+                color: $brown-4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom{
+    .left{
+      padding: 30px 0 0;
+      h4{
+        margin-bottom: 7px;
+        font-family: $main-font;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .right{
+      padding: 30px 0 0 18px;
+      margin-left: 20px;
+      margin-right: -20px;
+      p{
+        margin-bottom: 15px;
+        font-family: $secondary-font;
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+      }
+    }
+  }
+}

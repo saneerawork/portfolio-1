@@ -1,0 +1,33 @@
+.main-wrapper.donations-main-wrapper  {
+  padding-bottom: 30px;
+  .main-content-wrapper {
+
+    .donations-wrapper {
+      padding: 30px 0 0;
+      .container {
+        padding: 0;
+      }
+      .donations {
+        .donation {
+          &:nth-of-type(3n+1) {
+            margin: 0;
+          }
+          &:nth-of-type(3n+2) {
+            margin: 0;
+          }
+          &:nth-of-type(3n) {
+            margin: 0;
+          }
+          a{
+            margin: 10px;
+            .img-wrapper {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

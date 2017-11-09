@@ -1,0 +1,32 @@
+.main-wrapper.contact-us-wrapper {
+  .main-content-wrapper {
+    padding: 50px 0;
+    .contact-wrapper {
+      margin: 0 -15px;
+      > div {
+        padding: 0 15px;
+      }
+    }
+    .form-wrapper {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .contact-item-wrapper {
+      padding: 30px;
+      height: 200px;
+      &.middle{
+        margin: 0;
+      }
+      &:first-of-type{
+        margin-bottom: 30px;
+      }
+    }
+
+    .directions-wrapper{
+      .details-wrapper{
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+}

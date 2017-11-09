@@ -1,0 +1,17 @@
+.main-wrapper.scholarship-wrapper{
+  .main-content-wrapper{
+    padding: 50px 0;
+    .container{
+      .row{
+        > div{
+          &.left {
+            width: 25%;
+          }
+          &.right {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}

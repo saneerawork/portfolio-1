@@ -1,0 +1,46 @@
+.main-wrapper.scholarship-wrapper{
+  .main-content-wrapper{
+    padding: 50px 0;
+    .container{
+      .row{
+        > div{
+          &.left {
+            width: 270px;
+            float: left;
+            padding: 0;
+            @include sideBar;
+          }
+          &.right {
+            width: 900px;
+            float: right;
+            padding: 0;
+            @include default-page;
+            a{
+              color: $brown-5;
+              text-decoration: underline;
+            }
+            ul {
+              margin: 20px 0 30px;
+            }
+            .top-row{
+              padding: 40px;
+              margin-bottom: 20px;
+              background-color: $gray-2;
+            }
+            .bottom-row{
+              padding: 40px;
+              background-color: $gray-2;
+              > a{
+                @include main-btn(12px 25px);
+                text-decoration: none;
+              }
+            }
+            .faq-wrapper{
+              @include faq;
+            }
+          }
+        }
+      }
+    }
+  }
+}

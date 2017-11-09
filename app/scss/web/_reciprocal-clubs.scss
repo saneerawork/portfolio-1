@@ -1,0 +1,212 @@
+.main-wrapper.reciprocal-clubs-wrapper {
+  .main-content-wrapper {
+    padding: 50px 0;
+    .container {
+      .row {
+        > div {
+          &.left {
+            width: 270px;
+            float: left;
+            padding: 0;
+            @include sideBar;
+          }
+          &.right {
+            width: 900px;
+            float: right;
+            padding: 0;
+            @include default-page;
+            .faq-wrapper {
+              @include faq;
+            }
+            .clubs-wrapper {
+              padding: 40px;
+              background-color: $gray-2;
+              .filter-wrapper {
+                margin-bottom: 20px;
+                form {
+                  .form-group {
+                    position: relative;
+                    margin: 0;
+                    border: 1px solid $gray-5;
+                    box-shadow: none;
+                    overflow: hidden;
+                    select.form-control {
+                      position: relative;
+                      height: 40px;
+                      background: none;
+                      border: none;
+                      padding-left: 20px !important;
+                      border-radius: 0;
+                      margin-right: -20px;
+                      font-family: $secondary-font;
+                      color: $gray-1;
+                      font-size: 14px;
+                      font-weight: 600;
+                      line-height: 21px;
+                      box-shadow: none;
+                      background: $white;
+                      &::-webkit-input-placeholder {
+                        /* Chrome/Opera/Safari */
+                        color: $brown-4;
+                      }
+                      &::-moz-placeholder {
+                        /* Firefox 19+ */
+                        color: $brown-4;
+                      }
+                      &:-ms-input-placeholder {
+                        /* IE 10+ */
+                        color: $brown-4;
+                      }
+                      &:-moz-placeholder {
+                        /* Firefox 18- */
+                        color: $brown-4;
+                      }
+                      &:focus {
+                        border: none;
+                        outline: none;
+                      }
+                      option {
+                        height: 40px;
+                        background-color: $white;
+                        padding-left: 20px !important;
+                        border-radius: 0;
+                        font-family: $secondary-font;
+                        color: $gray-1;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 21px;
+                      }
+                    }
+                    &:after {
+                      width: 0;
+                      height: 0;
+                      border-left: 4px solid transparent;
+                      border-right: 4px solid transparent;
+                      border-top: 7px solid $brown-4;
+                      position: absolute;
+                      top: 40%;
+                      right: 25px;
+                      content: "";
+                      z-index: 2;
+                    }
+                    &:before {
+                      content: "";
+                      width: 7px;
+                      height: 38px;
+                      position: absolute;
+                      top: 1px;
+                      right: 6px;
+                      background: $white;
+                      z-index: 1;
+                    }
+                  }
+                }
+              }
+              .club {
+                background: $white;
+                margin-bottom: 20px;
+                padding: 40px;
+                h3 {
+                  margin-bottom: 16px;
+                  font-family: $secondary-font;
+                  color: $brown-3;
+                  font-size: 18px;
+                  font-weight: 400;
+                  line-height: 21px;
+                }
+                > a {
+                  @include common-link;
+                  margin-bottom: 10px;
+                  font-size: 14px;
+                }
+                p {
+                  font-family: $secondary-font;
+                  color: $gray-1;
+                  font-size: 14px;
+                  font-weight: 600;
+                  line-height: 21px;
+                  >a{
+                    color: $gray-1;
+                    font-size: 14px;
+                    &:hover,
+                    &:focus{
+                      color: $blue-1;
+                    }
+                  }
+                }
+                .contact-wrapper {
+                  @include clearfix;
+                  margin-top: 30px;
+                  width: 100%;
+                  a {
+                    display: inline-block;
+                    width: calc(50% - 10px);
+                    padding: 15px;
+                    text-align: center;
+                    border: 1px solid $brown-2;
+                    p {
+                      margin: 10px 0 0;
+                      font-family: $secondary-font;
+                      color: $brown-3;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 21px;
+                      text-align: center;
+                    }
+                    &:first-of-type {
+                      float: left;
+                    }
+                    &:last-of-type {
+                      float: right;
+                    }
+                    &:hover,
+                    &:focus {
+                      border-color: $blue-1;
+                      color: $blue-1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.clubs-popup-content {
+  width: 570px;
+  padding: 40px 40px 20px;
+  h3{
+    margin-bottom: 20px;
+    font-family: $secondary-font;
+    color: $brown-4;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  p{
+    margin-bottom: 20px;
+    font-family: $secondary-font;
+    color: $brown-3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  ol{
+    li{
+      font-family: $secondary-font;
+      color: $brown-3;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+  a{
+    color: $brown-5;
+    font-weight: 700;
+    text-decoration: underline;
+
+  }
+}

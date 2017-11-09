@@ -1,0 +1,411 @@
+//retina js
+@import "../../bower_components/retinajs/dist/retina.scss";
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin custom-border-radius($radius-top, $radius-right, $radius-bottom, $radius-left) {
+  -moz-border-radius: $radius-top $radius-right $radius-bottom $radius-left;
+  -webkit-border-radius: $radius-top $radius-right $radius-bottom $radius-left;
+  border-radius: $radius-top $radius-right $radius-bottom $radius-left;
+}
+
+@mixin rotate($degrees) {
+  // degrees in deg (30deg)
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+@mixin box-shadow($shadow, $color) {
+  -webkit-box-shadow: $shadow $color;
+  -moz-box-shadow: $shadow $color;
+  -ms-box-shadow: $shadow $color;
+  -o-box-shadow: $shadow $color;
+  box-shadow: $shadow $color;
+}
+
+@mixin no-box-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin animation($option, $time) {
+  -webkit-animation: $option $time;
+  -moz-animation: $option $time;
+  -ms-animation: $option $time;
+  -o-animation: $option $time;
+  animation: $option $time;
+}
+
+@mixin transition($transition, $time) {
+  -webkit-transition: $transition $time;
+  -moz-transition: $transition $time;
+  -ms-transition: $transition $time;
+  -o-transition: $transition $time;
+  transition: $transition $time;
+}
+
+@mixin no-transition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+@mixin clearfix {
+  display: inline-block;
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+@mixin clearfix-left {
+  display: inline-block;
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: left;
+    height: 0;
+  }
+}
+
+@mixin main-title {
+  font-family: $main-font;
+  color: $brown-1;
+  font-size: 48px;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: 30px;
+    text-align: center;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    font-size: 38px;
+    text-align: center;
+  }
+}
+
+@mixin main-btn($padding) {
+  display: inline-block;
+  padding: $padding;
+  background-color: $brown-4;
+  font-family: $main-font;
+  color: $brown-3;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid $brown-4;
+  text-align: center;
+  @include transition(all ease, .4s);
+  &:hover {
+    color: $white;
+    background-color: $blue-1;
+    border: 1px solid $blue-1;
+  }
+}
+
+@mixin secondary-btn($padding) {
+  display: inline-block;
+  padding: $padding;
+  font-family: $main-font;
+  color: $brown-3;
+  border: 1px solid $brown-4;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  @include transition(all ease, .4s);
+  &:hover {
+    color: $brown-4;
+    background-color: $brown-3;
+    border-color: $brown-3;
+  }
+}
+
+@mixin common-link {
+  display: inline-block;
+  color: $brown-6;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  word-wrap: break-word;
+  &:hover,
+  &:focus {
+    color: $blue-1;
+  }
+}
+
+@mixin banner-btn($padding) {
+  @include secondary-btn($padding);
+  background-color: $black-08;
+  margin-top: 32px;
+  color: $brown-4;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  &:hover {
+    color: $black;
+    background-color: $brown-4-06;
+  }
+}
+
+@mixin sideBar {
+  padding: 0 20px 20px 0;
+  h3 {
+    margin: 40px 0 20px;
+    font-family: $secondary-font;
+    color: $brown-1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  > ul {
+    border: none;
+    > li {
+      margin-bottom: 0;
+      display: block;
+      width: 215px;
+      > a {
+        display: block;
+        width: 100%;
+        padding: 9px 20px;
+        @include border-radius(0);
+        border: none;
+        font-family: $main-font;
+        color: $brown-3;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        -webkit-box-shadow: 2px 0 1px 0px rgba(235, 235, 235, 1);
+        -moz-box-shadow: 2px 0 1px 0px rgba(235, 235, 235, 1);
+        box-shadow: 2px 0 1px 0px rgba(235, 235, 235, 1);
+        @include transition(all ease, 0s);
+        &:hover {
+          position: relative;
+          box-shadow: inset 0 -2px 0 $brown-4;
+          background-color: $black;
+          color: $brown-4;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            bottom: 0;
+            top: -3px;
+            right: -20px;
+            margin-top: 2px;
+            overflow: hidden;
+            background-image: linear-gradient(to top right, $black 48%, transparent 51%), linear-gradient(to bottom right, $black 48%, transparent 51%);
+            background-size: 100% 51%;
+            background-position: top left, bottom left;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      &.active {
+        > a {
+          position: relative;
+          box-shadow: inset 0 -2px 0 $brown-4;
+          background-color: $black;
+          color: $brown-4;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            bottom: 0;
+            top: -3px;
+            right: -20px;
+            margin-top: 2px;
+            overflow: hidden;
+            background-image: linear-gradient(to top right, $black 48%, transparent 51%), linear-gradient(to bottom right, $black 48%, transparent 51%);
+            background-size: 100% 51%;
+            background-position: top left, bottom left;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      &.faq {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    margin-bottom: 20px;
+    padding: 0 15px;
+    h3 {
+      margin: 15px;
+    }
+    ul {
+      border: none;
+      li {
+        width: 100%;
+        a {
+          &:hover {
+            &:after {
+              display: none;
+            }
+          }
+        }
+        &.active {
+          a {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin faq {
+
+  padding: 40px;
+  background-color: $gray-2;
+
+  .panel-group {
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid $gray-5;
+    .panel {
+      padding: 0 30px 0 0;
+      border: none;
+      background: transparent;
+      position: relative;
+      box-shadow: inset 0 -1px 0 $gray-5;
+      .panel-heading {
+        background: transparent;
+        padding: 0;
+        .panel-title {
+          margin: 0;
+          a {
+            padding: 15px 30px 28px 0;
+            display: inline-block;
+            width: 100%;
+            font-family: $secondary-font;
+            color: $brown-3;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            text-decoration: none;
+            &:after {
+              position: absolute;
+              top: 20px;
+              right: 10px;
+              content: '';
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              background: $gray-6 url(../images/prev-white.svg) no-repeat center;
+              @include rotate(270deg);
+              @include border-radius(30px);
+            }
+          }
+        }
+        &.active {
+          .panel-title {
+            a {
+              color: $brown-1;
+              &:after {
+                background: $brown-1 url(../images/prev-white.svg) no-repeat center;
+                @include rotate(90deg);
+              }
+            }
+          }
+        }
+      }
+      .panel-collapse {
+        .panel-body {
+          padding: 0 30px 5px 0;
+          border: none;
+          ul {
+            margin: 0;
+            li {
+              margin: 0 0 10px;
+              font-family: $secondary-font;
+              color: $gray-1;
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 21px;
+            }
+          }
+          p {
+            margin-bottom: 15px;
+            font-family: $secondary-font;
+            color: $gray-1;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin default-page {
+
+  h3 {
+    margin-bottom: 20px;
+    font-family: $secondary-font;
+    color: $brown-3;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+  }
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 20px;
+    font-family: $secondary-font;
+    color: $brown-1;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+  }
+  p {
+    font-family: $secondary-font;
+    color: $brown-3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    strong {
+      font-weight: 700;
+    }
+  }
+  a {
+    @include common-link;
+  }
+  ul {
+    margin: 0;
+    li {
+      margin-bottom: 5px;
+      font-family: $secondary-font;
+      color: $brown-3;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+    }
+  }
+}

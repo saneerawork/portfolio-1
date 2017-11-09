@@ -1,0 +1,100 @@
+.main-wrapper.our-hotel-wrapper {
+  .main-content-wrapper {
+    padding: 30px 0 0;
+    .container {
+      .row {
+        > div {
+          &.left{
+            width: 100%;
+            ul {
+              li.special-offers {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+          &.right {
+            width: 100%;
+            padding: 0;
+            .green-initiative-wrapper {
+              padding: 20px;
+              .row {
+                > div {
+                  margin-bottom: 20px;
+                }
+              }
+              > h6 {
+                margin: 0;
+              }
+            }
+
+
+            .visual-gallery-wrapper {
+              padding: 20px;
+              .main-nav-tabs {
+                > li {
+                  display: block;
+                  a {
+                    padding: 5px 10px;
+                  }
+                }
+              }
+
+            }
+
+
+            .special-offers-wrapper {
+
+              padding: 20px 20px 0;
+              background-color: $gray-2;
+
+              .items-wrapper{
+                > div{
+                  &:nth-of-type(2n){
+                    padding-left: 15px;
+                  }
+                  &:nth-of-type(2n+1){
+                    padding-right: 15px;
+                  }
+                }
+                .item{
+                  padding-bottom: 67px;
+                  a{
+                    p{
+                      padding: 20px;
+                    }
+                    .link{
+                      bottom: 20px;
+                      width: 90%;
+                      right: 5%;
+                    }
+                  }
+                }
+              }
+            }
+
+
+            .special-offers-detail-wrapper {
+              padding: 40px 20px 20px;
+              .top-content-wrapper {
+                > div {
+                  > img {
+                    margin-top: 20px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.special-offers-popup-content{
+  width: 100%;
+  padding: 20px !important;
+}

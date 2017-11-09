@@ -1,0 +1,96 @@
+@import "../css/vendor.min.css";
+@import "variables";
+@import "mixins";
+@import "bootstrap-overwrites";
+@import "fonts";
+@import "web/common";
+@import "web/header";
+@import "web/footer";
+@import "web/animations";
+
+
+@import "web/index";
+@import "web/events";
+@import "web/event-detail";
+@import "web/scholarships";
+@import "web/reciprocal-clubs";
+@import "web/accommodation";
+@import "web/our-hotel";
+@import "web/contact-us";
+@import "web/donations";
+
+/*Media queries*/
+
+/* Retina */
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+all and (-o-min-device-pixel-ratio: 3 / 2),
+all and (min--moz-device-pixel-ratio: 1.5),
+all and (min-device-pixel-ratio: 1.5) {
+  //  @import "retina/index";
+}
+
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  @import "medium-desktop/common";
+  @import "medium-desktop/header";
+  @import "small-desktop/footer";
+
+  @import "medium-desktop/index";
+  @import "medium-desktop/events";
+  @import "medium-desktop/scholarships";
+  @import "medium-desktop/reciprocal-clubs";
+  @import "medium-desktop/accommodation";
+  @import "medium-desktop/our-hotel";
+  @import "medium-desktop/contact-us";
+  @import "medium-desktop/donations";
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  @import "small-desktop/common";
+  @import "mobile/header";
+  @import "small-desktop/footer";
+
+  @import "small-desktop/index";
+  @import "small-desktop/events";
+  @import "medium-desktop/scholarships";
+  @import "medium-desktop/reciprocal-clubs";
+  @import "mobile/accommodation";
+  @import "medium-desktop/our-hotel";
+  @import "medium-desktop/contact-us";
+  @import "small-desktop/donations";
+
+}
+
+@media (min-width:768px) and (max-width:991px) and (orientation: landscape) {
+
+  @import "medium-desktop/index";
+  @import "medium-desktop/accommodation";
+
+}
+
+/*Mobile phones*/
+@media (max-width: 767px) {
+  @import "mobile/common";
+  @import "mobile/header";
+  @import "mobile/footer";
+
+  @import "mobile/index";
+  @import "mobile/events";
+  @import "mobile/event-detail";
+  @import "mobile/scholarships";
+  @import "mobile/reciprocal-clubs";
+  @import "mobile/accommodation";
+  @import "mobile/our-hotel";
+  @import "mobile/contact-us";
+  @import "mobile/donations";
+
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  @import "mobile/landscape/events";
+  @import "mobile/landscape/reciprocal-clubs";
+}
+
+@media (max-width: 450px) {
+}

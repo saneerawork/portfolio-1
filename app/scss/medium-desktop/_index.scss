@@ -1,0 +1,151 @@
+.main-wrapper.home-wrapper {
+
+  .main-banner-slider-wrapper {
+    height: auto;
+    .banner-slider {
+      .slide-item {
+        position: relative;
+        > img {
+          width: 100%;
+        }
+        .content-wrapper {
+          height:  auto;
+        }
+        .content {
+          height: 100%;
+        }
+      }
+      .slick-dots {
+        display: none;
+      }
+    }
+  }
+
+  .below-banner-section {
+    padding-top: 30px;
+    .links-wrapper-slider {
+      margin-top: 0;
+      .link-item {
+        height: auto;
+        a {
+          width: 100%;
+        }
+      }
+
+    }
+    .content-wrapper  {
+      padding-top: 30px;
+      h3 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      > div{
+        &:last-of-type{
+          padding-left: 0;
+        }
+      }
+      .why-us-wrapper {
+        padding: 25px 15px;
+      }
+    }
+  }
+
+  .vids-photo-section {
+    .tab-content {
+      .video-img-slider {
+        .slider-item {
+          .top-row {
+            width: 99%;
+            margin: 0;
+          }
+          .bottom-row {
+            width: 99%;
+            margin: 0;
+          }
+          .left {
+            width: 49.5%;
+          }
+          .right {
+            width: 49.5%;
+          }
+          .full-width {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .best-hotel-section {
+    padding: 50px 0;
+    background-size: contain !important;
+    h2 {
+      @include main-title;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .container {
+      padding: 0;
+    }
+    .top-row {
+      margin: 0 15px 30px;
+      .top-row-item {
+        img{
+          display: inline-block;
+        }
+        > p {
+          text-align: center;
+        }
+      }
+    }
+    .best-hotel-slider {
+      .bottom-row {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .plan-event-section {
+    .button-wrapper{
+      a{
+        width: calc(100%);
+        &:first-of-type{
+          margin: 15px 0;
+        }
+        &:last-of-type{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .club-news-section {
+    .content-wrapper {
+      a {
+        display: block;
+      }
+      .text-wrapper {
+        left: 15px;
+        width: 100%;
+      }
+    }
+    .left {
+      .content-wrapper {
+        .image-wrapper {
+          width: 100%;
+        }
+      }
+    }
+    .right {
+      .content-wrapper {
+        .image-wrapper {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

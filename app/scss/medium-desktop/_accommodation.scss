@@ -1,0 +1,16 @@
+.main-wrapper.accommodation-wrapper {
+  .main-content-wrapper {
+    .container {
+      .row {
+        > div {
+          &.left {
+            width: 25%;
+          }
+          &.right {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}

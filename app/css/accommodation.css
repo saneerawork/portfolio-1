@@ -1,0 +1,455 @@
+/**
+ * Allows you to use retina images at various pixel densities.
+ * Examples:
+ *
+ *   @include retina(/images/mypic.jpg, 2);
+ *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent);
+ *
+ * @param  {Value}  $path               The path to the file name minus extension.
+ * @param  {Number} $cap:    2          The highest pixel density level images exist for.
+ * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
+ * @param  {Value}  $extras: null       Any other `background` values to be added.
+ */
+/**
+ * Allows you to use retina images at various pixel densities.
+ * Examples:
+ *
+ *   @include retina(/images/mypic.jpg, 2);
+ *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent);
+ *
+ * @param  {Value}  $path               The path to the file name minus extension.
+ * @param  {Number} $cap:    2          The highest pixel density level images exist for.
+ * @param  {Value}  $size:   auto auto  The intended width of the rendered image.
+ * @param  {Value}  $extras: null       Any other `background` values to be added.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  transition: all ease 0.3s;
+  word-wrap: break-word; }
+  a:focus, a:hover {
+    text-decoration: none;
+    outline: none; }
+
+.slick-slide:focus {
+  outline: none; }
+
+.main-wrapper.accommodation-wrapper .main-content-wrapper {
+  padding: 50px 0; }
+  .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left {
+    width: 270px;
+    float: left;
+    padding: 0;
+    padding: 0 20px 20px 0; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left h3 {
+      margin: 40px 0 20px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #a6825e;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul {
+      border: none; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li {
+        margin-bottom: 0;
+        display: block;
+        width: 215px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li a {
+          display: block;
+          width: 100%;
+          padding: 9px 20px;
+          border-radius: 0;
+          border: none;
+          font-family: "Cormorant Garamond", serif;
+          color: #2c2625;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 21px;
+          box-shadow: 2px 0 1px 0px #ebebeb;
+          transition: all ease 0s; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li a:hover {
+            position: relative;
+            box-shadow: inset 0 -2px 0 #dcc39a;
+            background-color: #000;
+            color: #dcc39a; }
+            .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li a:hover:after {
+              content: "";
+              position: absolute;
+              width: 25px;
+              bottom: 0;
+              top: -3px;
+              right: -25px;
+              margin-top: 2px;
+              overflow: hidden;
+              background-image: linear-gradient(to top right, #000 48%, transparent 51%), linear-gradient(to bottom right, #000 48%, transparent 51%);
+              background-size: 100% 51%;
+              background-position: top left, bottom left;
+              background-repeat: no-repeat; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li.active a {
+          position: relative;
+          box-shadow: inset 0 -2px 0 #dcc39a;
+          background-color: #000;
+          color: #dcc39a; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li.active a:after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            bottom: 0;
+            top: -3px;
+            right: -25px;
+            margin-top: 2px;
+            overflow: hidden;
+            background-image: linear-gradient(to top right, #000 48%, transparent 51%), linear-gradient(to bottom right, #000 48%, transparent 51%);
+            background-size: 100% 51%;
+            background-position: top left, bottom left;
+            background-repeat: no-repeat; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li.faq {
+          display: none; }
+    @media (max-width: 991px) {
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left {
+        margin-bottom: 20px;
+        padding: 0 15px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left h3 {
+          margin: 15px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul {
+          border: none; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li {
+            width: 100%; }
+            .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li a:hover:after {
+              display: none; }
+            .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left ul li.active a:after {
+              display: none; } }
+  .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right {
+    width: 900px;
+    float: right;
+    padding: 0; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details {
+      padding: 40px;
+      background-color: #f8f8f8; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details h3 {
+        margin-bottom: 20px;
+        font-family: "Nunito Sans", sans-serif;
+        color: #2c2625;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details h4,
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details h5,
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details h6 {
+        margin-bottom: 20px;
+        font-family: "Nunito Sans", sans-serif;
+        color: #a6825e;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: left; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details p {
+        font-family: "Nunito Sans", sans-serif;
+        color: #2c2625;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details p strong {
+          font-weight: 700; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details a {
+        display: inline-block;
+        color: #ac8a68;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        word-wrap: break-word; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details a:hover, .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details a:focus {
+          color: #004684; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details ul {
+        margin: 0; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details ul li {
+          margin-bottom: 5px;
+          font-family: "Nunito Sans", sans-serif;
+          color: #2c2625;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider {
+        margin-bottom: 20px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slide-item .image-wrapper {
+          width: 100%;
+          height: 300px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slick-arrow {
+          width: 30px;
+          height: 30px; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slick-arrow:after {
+            width: 5px;
+            height: 9px;
+            top: 10px; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slick-arrow.slick-prev {
+            left: -13px; }
+            .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slick-arrow.slick-prev:after {
+              left: 13px; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slick-arrow.slick-next {
+            right: -13px; }
+            .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-slider .slick-arrow.slick-next:after {
+              right: 13px; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-details-wrapper {
+        margin-bottom: 40px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-details-wrapper .link {
+          margin: 20px 0;
+          display: inline-block;
+          padding: 12px;
+          background-color: #dcc39a;
+          font-family: "Cormorant Garamond", serif;
+          color: #2c2625;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          border: 1px solid #dcc39a;
+          text-align: center;
+          transition: all ease 0.4s;
+          width: 100%; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .top-details-wrapper .link:hover {
+            color: #fff;
+            background-color: #004684;
+            border: 1px solid #004684; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .title-wrapper {
+        margin-bottom: 40px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .title-wrapper h6 {
+          text-align: center; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .title-wrapper h3 {
+          color: #2c2625;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: center; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .items-wrapper h3 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e3e3e3;
+        font-family: "Nunito Sans", sans-serif;
+        color: #ac8a68;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 40px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .items-wrapper h3 img {
+          margin-right: 10px; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .items-wrapper ul {
+        margin-bottom: 40px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .items-wrapper ul li {
+          font-family: "Nunito Sans", sans-serif;
+          color: #2c2625;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .items-wrapper ul li a {
+            display: inline;
+            color: #9b7755;
+            font-weight: 700;
+            text-decoration: underline; }
+            .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .items-wrapper ul li a:hover {
+              color: #004684; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .ada-compliant-wrapper {
+        padding: 20px;
+        box-shadow: inset 0 1px 0 #dcc39a;
+        background-color: #2c2625; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .ada-compliant-wrapper .row > div {
+          padding: 0; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .ada-compliant-wrapper h3 {
+          margin-bottom: 20px;
+          font-family: "Nunito Sans", sans-serif;
+          color: #dcc39a;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 21px; }
+        .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .ada-compliant-wrapper ul {
+          margin: 0;
+          padding: 0 20px 0 30px; }
+          .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .ada-compliant-wrapper ul li {
+            font-family: "Nunito Sans", sans-serif;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px; }
+
+.check-availability-popup-content {
+  width: 770px;
+  padding: 0 !important; }
+  .check-availability-popup-content .content-wrapper {
+    text-align: center;
+    padding: 40px; }
+    .check-availability-popup-content .content-wrapper h3 {
+      margin-bottom: 20px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #2c2625;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left; }
+    .check-availability-popup-content .content-wrapper h4,
+    .check-availability-popup-content .content-wrapper h5,
+    .check-availability-popup-content .content-wrapper h6 {
+      margin-bottom: 20px;
+      font-family: "Nunito Sans", sans-serif;
+      color: #a6825e;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: left; }
+    .check-availability-popup-content .content-wrapper p {
+      font-family: "Nunito Sans", sans-serif;
+      color: #2c2625;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left; }
+      .check-availability-popup-content .content-wrapper p strong {
+        font-weight: 700; }
+    .check-availability-popup-content .content-wrapper a {
+      display: inline-block;
+      color: #ac8a68;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      word-wrap: break-word; }
+      .check-availability-popup-content .content-wrapper a:hover, .check-availability-popup-content .content-wrapper a:focus {
+        color: #004684; }
+    .check-availability-popup-content .content-wrapper ul {
+      margin: 0; }
+      .check-availability-popup-content .content-wrapper ul li {
+        margin-bottom: 5px;
+        font-family: "Nunito Sans", sans-serif;
+        color: #2c2625;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left; }
+    .check-availability-popup-content .content-wrapper h3:not(:first-of-type) {
+      margin: 40px 0 20px; }
+    .check-availability-popup-content .content-wrapper p {
+      margin-bottom: 20px; }
+    .check-availability-popup-content .content-wrapper > div {
+      text-align: left; }
+      .check-availability-popup-content .content-wrapper > div strong {
+        font-family: "Nunito Sans", sans-serif;
+        color: #2c2625;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 700; }
+    .check-availability-popup-content .content-wrapper ul {
+      width: 50%;
+      float: left;
+      margin-bottom: 35px; }
+    .check-availability-popup-content .content-wrapper h6 {
+      display: inline-block;
+      padding: 20px;
+      box-shadow: inset 0 1px 0 #dcc39a;
+      background-color: #2c2625;
+      font-family: "Nunito Sans", sans-serif;
+      color: #dcc39a;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px; }
+      .check-availability-popup-content .content-wrapper h6:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0; }
+    .check-availability-popup-content .content-wrapper > a {
+      display: inline-block;
+      padding: 9px 50px;
+      background-color: #dcc39a;
+      font-family: "Cormorant Garamond", serif;
+      color: #2c2625;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid #dcc39a;
+      text-align: center;
+      transition: all ease 0.4s;
+      margin: 0 auto; }
+      .check-availability-popup-content .content-wrapper > a:hover {
+        color: #fff;
+        background-color: #004684;
+        border: 1px solid #004684; }
+
+/*Media queries*/
+/*Mac*/
+/* Retina */
+/*Tab devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-wrapper.accommodation-wrapper .main-content-wrapper {
+    padding: 30px 0 0; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left {
+      width: 100%; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right {
+      width: 100%;
+      padding: 0; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .title-wrapper {
+        margin-bottom: 10px; }
+  .check-availability-popup-content {
+    width: 100%; }
+    .check-availability-popup-content .content-wrapper {
+      padding: 20px; }
+      .check-availability-popup-content .content-wrapper h3 {
+        font-size: 20px;
+        line-height: 24px; }
+        .check-availability-popup-content .content-wrapper h3:not(:first-of-type) {
+          margin: 20px 0; }
+      .check-availability-popup-content .content-wrapper ul {
+        padding-left: 25px;
+        width: 100%;
+        float: none;
+        margin-bottom: 10px; }
+      .check-availability-popup-content .content-wrapper h6 {
+        margin-top: 15px; } }
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left {
+    width: 25%; }
+  .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right {
+    width: 75%; } }
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left {
+    width: 25%; }
+  .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right {
+    width: 75%; } }
+
+/*Mobile phones*/
+@media (max-width: 767px) {
+  .main-wrapper.accommodation-wrapper .main-content-wrapper {
+    padding: 30px 0 0; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.left {
+      width: 100%; }
+    .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right {
+      width: 100%;
+      padding: 0; }
+      .main-wrapper.accommodation-wrapper .main-content-wrapper .container .row > div.right .hotel-room-details .title-wrapper {
+        margin-bottom: 10px; }
+  .check-availability-popup-content {
+    width: 100%; }
+    .check-availability-popup-content .content-wrapper {
+      padding: 20px; }
+      .check-availability-popup-content .content-wrapper h3 {
+        font-size: 20px;
+        line-height: 24px; }
+        .check-availability-popup-content .content-wrapper h3:not(:first-of-type) {
+          margin: 20px 0; }
+      .check-availability-popup-content .content-wrapper ul {
+        padding-left: 25px;
+        width: 100%;
+        float: none;
+        margin-bottom: 10px; }
+      .check-availability-popup-content .content-wrapper h6 {
+        margin-top: 15px; } }

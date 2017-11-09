@@ -1,0 +1,30 @@
+.main-wrapper.our-hotel-wrapper {
+  .main-content-wrapper {
+    .container {
+      .row {
+        > div {
+          &.left{
+            width: 25%;
+            ul {
+              li.special-offers {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+          &.right {
+            width: 75%;
+            .green-initiative-wrapper {
+              .row {
+                > div {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

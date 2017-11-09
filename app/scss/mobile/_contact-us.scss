@@ -1,0 +1,64 @@
+.main-wrapper.contact-us-wrapper {
+  .main-content-wrapper {
+    padding: 30px 15px;
+    .contact-wrapper {
+      margin: 0 -15px;
+      > div {
+        padding: 0 15px;
+      }
+    }
+    .form-wrapper {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .contact-item-wrapper {
+      margin: 0 0 20px;
+      padding: 20px;
+      height: auto;
+      &.main-item {
+        padding: 20px;
+        h3 {
+          font-size: 34px;
+        }
+      }
+        &.middle{
+        margin: 0 0 20px;
+      }
+      &:first-of-type{
+        margin-bottom: 20px;
+      }
+    }
+
+    .map-wrapper{
+      margin: 25px 0;
+      h3{
+        font-size: 34px;
+      }
+    }
+
+    .directions-wrapper{
+      .details-wrapper{
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+    }
+
+    .parking-wrapper{
+      margin-top: 30px;
+      .parking-details-wrapper{
+        padding: 20px;
+        &.content{
+          ul{
+            float: none;
+            width: 100%;
+          }
+          > a{
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+  }
+}
